@@ -3,7 +3,7 @@ console.log("Working")
 const express = require('express');
 const mysql = require('mysql');
 var bodyParser = require('body-parser');
-
+var port = process.env.PORT || 3001;
 const app = express();
 // Username: 2hyuCDmV1E
 //
@@ -124,6 +124,6 @@ app.get('/allbanks',(req,res)=>{
 });
 
 //ifsc code
-app.listen(process.env.port,()=>{
-  console.log("Server started in port 3000");
+app.listen(port,()=>{
+  console.log("Server started in port"+port);
 });
