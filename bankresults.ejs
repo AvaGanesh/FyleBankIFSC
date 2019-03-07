@@ -1,0 +1,35 @@
+<table class="table table-inverse">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">IFSC</th>
+          <th scope="col">BANK ID</th>
+          <th scope="col">BANK NAME</th>
+          <th scope="col">BRANCH</th>
+          <th scope="col">ADDRESS</th>
+          <th scope="col">CITY</th>
+          <th scope="col">DISTRICT</th>
+          <th scope="col">STATE</th>
+
+        </tr>
+      </thead>
+
+      <tbody>
+        <% for(var i=0; i < banklist.length; i++) { %>
+       <tr>
+
+         <td><%= banklist[i].ifsc %></td>
+         <td><%= banklist[i].bank_id %></td>
+         <td><%= banklist[i].bank_name %></td>
+         <td><%= banklist[i].branch %></td>
+         <td><%= banklist[i].address %></td>
+         <td><%= banklist[i].city %></td>
+         <td><%= banklist[i].district %></td>
+         <td><%= banklist[i].state %></td>
+
+
+       </tr>
+    <% } %>
+      </tbody>
+
+    </table>
